@@ -27,15 +27,14 @@ class Box{
          else{
            World.remove(world, this.body);
            push();
-           this.Visiblity = this.Visiblity - 5;
-           tint(255,this.Visiblity);
-           rect(0, 0, this.width, this.height);
+           this.visiblity = this.visiblity - 5;
+           
            pop();
         }
         }
 
         score(){
-          if (this.Visiblity < 0 && this.Visiblity > -1005){
+          if (this.visiblity < 0 && this.visiblity >-105){
             score++;
           }
         }
